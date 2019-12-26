@@ -1,0 +1,34 @@
+oc new-project jenkins
+
+oc new-app openshift/jenkins-2-centos7
+or
+oc new-app jenkins
+
+expose route:
+oc apply -f jenkinsRoute.yaml
+
+create pv:
+oc create -f pv.yaml 
+
+create pvc:
+oc create -f pvc.yaml 
+
+edit DeploymentConfig:
+oc edit dc DeploymentName
+
+
+---------------------------------
+
+oc new-project jenkins
+
+create pv:
+oc create -f pv.yaml 
+
+create pvc:
+oc create -f pvc.yaml 
+
+oc apply -f jenkinsDeployment.yaml
+
+oc expose dc jenkins
+
+oc apply -f jenkinsRoute.yaml

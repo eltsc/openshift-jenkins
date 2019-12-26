@@ -1,0 +1,20 @@
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: pv-jenkins
+spec:
+  capacity:
+    storage: 2Gi
+  gcePersistentDisk:
+    pdName: ***DiskName***
+    fsType: ext4
+  accessModes:
+    - ReadWriteOnce
+  claimRef:
+    kind: PersistentVolumeClaim
+    namespace: jenkins
+    name: pvc-jenkins
+    apiVersion: v1
+  persistentVolumeReclaimPolicy: Delete
+  storageClassName: standard
+  volumeMode: Filesystem

@@ -1,0 +1,53 @@
+kind: DeploymentConfig
+apiVersion: apps.openshift.io/v1
+metadata:
+  name: jenkins
+  namespace: jenkins
+  labels:
+    app: jenkins
+spec:
+  strategy:
+    type: Rolling
+    rollingParams:
+      updatePeriodSeconds: 1
+      intervalSeconds: 1
+      timeoutSeconds: 600
+      maxUnavailable: 25%
+      maxSurge: 25%
+    activeDeadlineSeconds: 21600
+  triggers:
+    - type: ConfigChange
+  replicas: 1
+  revisionHistoryLimit: 10
+  template:
+    metadata:
+      labels:
+        app: jenkins
+        deploymentconfig: jenkins
+    spec:
+      volumes:
+        - name: jenkins-data
+          persistentVolumeClaim:
+            claimName: pvc-jenkins
+      containers:
+        - name: jenkins
+          image: registry.redhat.io/openshift4/ose-jenkins
+          ports:
+            - containerPort: 50000
+              protocol: TCP
+            - containerPort: 53
+              protocol: TCP
+            - containerPort: 8080
+              protocol: TCP
+            - containerPort: 8443
+              protocol: TCP
+          resources: {}
+          volumeMounts:
+            - name: jenkins-data
+              mountPath: /var/lib/jenkins
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+          imagePullPolicy: Always
+      restartPolicy: Always
+      terminationGracePeriodSeconds: 30
+      dnsPolicy: ClusterFirst

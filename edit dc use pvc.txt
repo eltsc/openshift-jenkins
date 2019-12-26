@@ -1,0 +1,11 @@
+
+in the container template:  
+            - name: jenkins-data
+              mountPath: /var/lib/jenkins
+
+in volumes:
+      volumes:
+        - name: jenkins-data
+          persistentVolumeClaim:
+            claimName: jenkins
+
