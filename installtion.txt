@@ -1,6 +1,7 @@
 oc new-project jenkins
 
 oc adm policy add-scc-to-user privileged system:serviceaccount:jenkins:default
+oc adm policy add-cluster-role-to-user edit system:serviceaccount:jenkins:default
 
 create pv:
 oc create -f pv.yaml 
