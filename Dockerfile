@@ -1,4 +1,4 @@
-FROM registry.redhat.io/openshift4/ose-jenkins-agent-base
+FROM quay.io/openshift/origin-jenkins-agent-base
 
 ENV GO_VERSION_DEFAULT=1.13.5 \
     GOROOT=/usr/local/go \
