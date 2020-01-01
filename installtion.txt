@@ -13,3 +13,8 @@ oc apply -f jenkinsDeployment.yaml
 oc expose dc jenkins
 
 oc apply -f jenkinsRoute.yaml
+
+
+optional if need to use in private image as a dokcer container in kubernetes pod template:
+oc apply -f ClusterRole.yaml
+oc adm policy add-cluster-role-to-user NameOfClusterRole system:serviceaccount:jenkins:default
