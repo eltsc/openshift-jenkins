@@ -8,7 +8,7 @@ spec:
   output:
     to:
       kind: ImageStreamTag
-      name: 'jenkins-slave'
+      name: 'jenkins-slave:latest'
   strategy:
     type: Docker
     dockerStrategy:
