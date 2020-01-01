@@ -24,4 +24,5 @@ RUN if [ -z $GO_VERSION ] ; then GO_VERSION=${GO_VERSION_DEFAULT} ; fi && \
 
 USER 1001
 RUN echo hello
+RUN pwd
 RUN go version
