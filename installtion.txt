@@ -1,25 +1,6 @@
 oc new-project jenkins
 
-oc new-app openshift/jenkins-2-centos7
-or
-oc new-app jenkins
-
-expose route:
-oc apply -f jenkinsRoute.yaml
-
-create pv:
-oc create -f pv.yaml 
-
-create pvc:
-oc create -f pvc.yaml 
-
-edit DeploymentConfig:
-oc edit dc DeploymentName
-
-
----------------------------------
-
-oc new-project jenkins
+oc adm policy add-scc-to-user privileged system:serviceaccount:jenkins:default
 
 create pv:
 oc create -f pv.yaml 

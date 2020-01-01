@@ -29,9 +29,18 @@ spec:
         - name: jenkins-data
           persistentVolumeClaim:
             claimName: pvc-jenkins
+        - name: ca-pemstore
+          configMap:
+            name: ca-pemstore
       containers:
         - name: jenkins
           image: registry.redhat.io/openshift4/ose-jenkins
+          securityContext:
+            privileged: true
+          lifecycle:
+            postStart:
+              exec:
+                command: ["/bin/sh", "-c", "/usr/lib/jvm/jre/bin/keytool -import -keystore /etc/pki/ca-trust/extracted/java/cacerts -file /etc/ssl/certs/my-cert/gitlab.pem -storepass changeit -noprompt"]
           ports:
             - containerPort: 50000
               protocol: TCP
@@ -45,9 +54,12 @@ spec:
           volumeMounts:
             - name: jenkins-data
               mountPath: /var/lib/jenkins
+            - name: ca-pemstore
+              mountPath: /etc/ssl/certs/my-cert
           terminationMessagePath: /dev/termination-log
           terminationMessagePolicy: File
           imagePullPolicy: Always
+      serviceaccount: default
       restartPolicy: Always
       terminationGracePeriodSeconds: 30
       dnsPolicy: ClusterFirst

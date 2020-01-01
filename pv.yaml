@@ -6,7 +6,7 @@ spec:
   capacity:
     storage: 2Gi
   gcePersistentDisk:
-    pdName: ***DiskName***
+    pdName: disk-1
     fsType: ext4
   accessModes:
     - ReadWriteOnce

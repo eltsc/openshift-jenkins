@@ -1,0 +1,12 @@
+            - name: ca-pemstore
+              mountPath: /etc/ssl/certs/my-cert
+
+
+        - name: ca-pemstore
+          configMap:
+            name: ca-pemstore
+
+ lifecycle:
+            postStart:
+              exec:
+                command: ["/bin/sh", "-c", "/usr/lib/jvm/jre/bin/keytool -import -keystore /etc/pki/ca-trust/extracted/java/cacerts -file /etc/ssl/certs/my-cert/gitlab.pem -storepass changeit -noprompt"]
