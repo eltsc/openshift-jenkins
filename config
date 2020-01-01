@@ -1,6 +1,6 @@
 Host gitlab.com
   Hostname gitlab.apps.bos.bynet.dev
   User git
-  Port 2222
+  Port *PortNumber*
   PreferredAuthentications publickey
   IdentityFile /var/lib/jenkins/.ssh/id_rsa
