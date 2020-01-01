@@ -1,0 +1,24 @@
+kind: BuildConfig
+apiVersion: build.openshift.io/v1
+metadata:
+  name: jenkins-slave-golang
+  namespace: jenkins
+spec:
+  nodeSelector: null
+  output:
+    to:
+      kind: ImageStreamTag
+      name: 'jenkins-slave'
+  strategy:
+    type: Docker
+    dockerStrategy:
+      dockerfilePath: Dockerfile
+  postCommit: {}
+  source:
+    type: Git
+    git:
+      uri: 'https://github.com/eltsc/openshift-jenkins.git'
+    contextDir: /
+  triggers:
+    - type: ConfigChange
+  runPolicy: Serial
