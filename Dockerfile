@@ -32,3 +32,5 @@ RUN update-ca-trust force-enable &&\
     echo ${GIT_CRT} > /etc/pki/ca-trust/source/anchors/gitlab.pem && \
     update-ca-trust extract && \
     cat /etc/pki/ca-trust/source/anchors/gitlab.pem
+
+ENTRYPOINT [ "/usr/local/bin/run-jnlp-client" ]
