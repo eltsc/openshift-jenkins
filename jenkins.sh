@@ -2,6 +2,12 @@
 
 set -x
 
+oc new-project gitlab
+
+helm upgrade --install gitlab gitlab/gitlab --set nginx-ingress.enabled=false  --set global.hosts.domain=apps.bos.bynet.dev --set global.ingress.configureCertmanager=false --set certmanager.install=false --set gitlab-runner.install=false
+
+kubectl get secret gitlab-wildcard-tls-ca -ojsonpath='{.data.cfssl_ca}' | base64 --decode > gitlab.pem
+
 namespace="jenkins"
 
 oc new-project $namespace
@@ -23,3 +29,7 @@ oc apply -f jenkinsRoute.yaml
 
 oc apply -f ClusterRole.yaml
 oc adm policy add-cluster-role-to-user CreatePods system:serviceaccount:$namespace:default
+
+apt-get install ca-certificates
+cp gitlab.pem /usr/local/share/ca-certificates/gitlab.crt
+update-ca-certificates
