@@ -9,6 +9,9 @@ oc create -f pv.yaml
 create pvc:
 oc create -f pvc.yaml 
 
+create configmap with cert for gitlab:
+oc create configmap ca-pemstore --from-file=./gitlab.pem -n jenkins 
+
 oc apply -f jenkinsDeployment.yaml
 
 oc expose dc jenkins
