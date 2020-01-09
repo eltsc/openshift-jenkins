@@ -1,0 +1,126 @@
+JavaScript GUI Lib: ACE Editor bundle plugin (ace-editor): 1.0.1
+Ant Plugin (ant): 1.10
+OWASP Markup Formatter Plugin (antisamy-markup-formatter): 1.1
+Apache HttpComponents Client 4.x API Plugin (apache-httpcomponents-client-4-api): 4.5.10-2.0
+Authentication Tokens API Plugin (authentication-tokens): 1.3
+Blue Ocean (blueocean): 1.10.2
+Autofavorite for Blue Ocean (blueocean-autofavorite): 1.2.2
+Bitbucket Pipeline for Blue Ocean (blueocean-bitbucket-pipeline): 1.10.2
+Common API for Blue Ocean (blueocean-commons): 1.10.2
+Config API for Blue Ocean (blueocean-config): 1.10.2
+Blue Ocean Core JS (blueocean-core-js): 1.10.2
+Dashboard for Blue Ocean (blueocean-dashboard): 1.10.2
+Display URL for Blue Ocean (blueocean-display-url): 2.2.0
+Events API for Blue Ocean (blueocean-events): 1.10.2
+Git Pipeline for Blue Ocean (blueocean-git-pipeline): 1.10.2
+GitHub Pipeline for Blue Ocean (blueocean-github-pipeline): 1.10.2
+i18n for Blue Ocean (blueocean-i18n): 1.10.2
+JIRA Integration for Blue Ocean (blueocean-jira): 1.10.2
+JWT for Blue Ocean (blueocean-jwt): 1.10.2
+Personalization for Blue Ocean (blueocean-personalization): 1.10.2
+Pipeline implementation for Blue Ocean (blueocean-pipeline-api-impl): 1.10.2
+Blue Ocean Pipeline Editor (blueocean-pipeline-editor): 1.10.2
+Pipeline SCM API for Blue Ocean (blueocean-pipeline-scm-api): 1.10.2
+REST API for Blue Ocean (blueocean-rest): 1.10.2
+REST Implementation for Blue Ocean (blueocean-rest-impl): 1.10.2
+Web for Blue Ocean (blueocean-web): 1.10.2
+bouncycastle API Plugin (bouncycastle-api): 2.17
+Branch API Plugin (branch-api): 2.5.5
+Bitbucket Branch Source Plugin (cloudbees-bitbucket-branch-source): 2.2.15
+Folders Plugin (cloudbees-folder): 6.10.1
+Command Agent Launcher Plugin (command-launcher): 1.0
+conditional-buildstep (conditional-buildstep): 1.3.1
+Config File Provider Plugin (config-file-provider): 3.5
+Credentials Plugin (credentials): 2.3.0
+Credentials Binding Plugin (credentials-binding): 1.19
+Display URL API (display-url-api): 2.3.2
+Docker Commons Plugin (docker-commons): 1.16
+Docker Pipeline (docker-workflow): 1.21
+Durable Task Plugin (durable-task): 1.33
+External Monitor Job Type Plugin (external-monitor-job): 1.4
+Favorite (favorite): 2.3.1
+Git plugin (git): 4.0.0
+Git client plugin (git-client): 3.0.0
+GIT server Plugin (git-server): 1.7
+GitHub plugin (github): 1.29.2
+GitHub API Plugin (github-api): 1.90
+GitHub Branch Source Plugin (github-branch-source): 2.3.6
+GitHub Organization Folder Plugin (github-organization-folder): 1.6
+Gitlab API Plugin (gitlab-api): 1.0.5
+GitLab Plugin (gitlab-plugin): 1.5.13
+Go Plugin (golang): 1.2
+Google Kubernetes Engine Plugin (google-kubernetes-engine): 0.8.0
+Google OAuth Credentials plugin (google-oauth-plugin): 1.0.0
+JavaScript GUI Lib: Handlebars bundle plugin (handlebars): 1.1.1
+Handy Uri Templates 2.x API Plugin (handy-uri-templates-2-api): 2.1.6-1.0
+HTML Publisher plugin (htmlpublisher): 1.21
+Jackson 2 API Plugin (jackson2-api): 2.10.1
+Javadoc Plugin (javadoc): 1.1
+JDK Tool Plugin (jdk-tool): 1.0
+Design Language (jenkins-design-language): 1.10.2
+JIRA plugin (jira): 3.0.11
+Job DSL (job-dsl): 1.72
+JavaScript GUI Lib: jQuery bundles (jQuery and jQuery UI) plugin (jquery-detached): 1.2.1
+JSch dependency plugin (jsch): 0.1.55.1
+JUnit Plugin (junit): 1.26.1
+Kubernetes plugin (kubernetes): 1.19.3
+Kubernetes Client API Plugin (kubernetes-client-api): 4.6.4-2
+Kubernetes Credentials Plugin (kubernetes-credentials): 0.4.1
+LDAP Plugin (ldap): 1.11
+Lockable Resources plugin (lockable-resources): 2.5
+Mailer Plugin (mailer): 1.29
+MapDB API Plugin (mapdb-api): 1.0.9.0
+Matrix Authorization Strategy Plugin (matrix-auth): 2.2
+Matrix Project Plugin (matrix-project): 1.14
+Mercurial plugin (mercurial): 2.3
+Metrics Plugin (metrics): 4.0.2.5
+JavaScript GUI Lib: Moment.js bundle plugin (momentjs): 1.1
+OAuth Credentials plugin (oauth-credentials): 0.4
+OpenShift Client Jenkins Plugin (openshift-client): 1.0.32
+OpenShift Login Plugin (openshift-login): 1.0.20
+OpenShift Pipeline Jenkins Plugin (openshift-pipeline): 1.0.56
+OpenShift Sync (openshift-sync): 1.0.41
+PAM Authentication plugin (pam-auth): 1.6
+Parameterized Trigger plugin (parameterized-trigger): 2.35.2
+Pipeline: Build Step (pipeline-build-step): 2.11
+Pipeline: GitHub Groovy Libraries (pipeline-github-lib): 1.0
+Pipeline Graph Analysis Plugin (pipeline-graph-analysis): 1.7
+Pipeline: Input Step (pipeline-input-step): 2.11
+Pipeline: Milestone Step (pipeline-milestone-step): 1.3.1
+Pipeline: Model API (pipeline-model-api): 1.5.0
+Pipeline: Declarative Agent API (pipeline-model-declarative-agent): 1.1.1
+Pipeline: Declarative (pipeline-model-definition): 1.5.0
+Pipeline: Declarative Extension Points API (pipeline-model-extensions): 1.5.0
+Pipeline: REST API Plugin (pipeline-rest-api): 2.12
+Pipeline: Stage Step (pipeline-stage-step): 2.3
+Pipeline: Stage Tags Metadata (pipeline-stage-tags-metadata): 1.5.0
+Pipeline: Stage View Plugin (pipeline-stage-view): 2.12
+Pipeline Utility Steps (pipeline-utility-steps): 2.3.1
+Plain Credentials Plugin (plain-credentials): 1.5
+Pre SCM BuildStep Plugin (preSCMbuildstep): 0.3
+Prometheus metrics plugin (prometheus): 2.0.0
+Pub-Sub "light" Bus (pubsub-light): 1.12
+ruby-runtime (ruby-runtime): 0.12
+Run Condition Plugin (run-condition): 0.10
+SCM API Plugin (scm-api): 2.6.3
+Script Security Plugin (script-security): 1.68
+Server Sent Events (SSE) Gateway Plugin (sse-gateway): 1.16
+SSH Credentials Plugin (ssh-credentials): 1.17.3
+Structs Plugin (structs): 1.20
+Subversion Plug-in (subversion): 2.10.3
+Token Macro Plugin (token-macro): 2.8
+Variant Plugin (variant): 1.3
+Windows Slaves Plugin (windows-slaves): 1.0
+Pipeline (workflow-aggregator): 2.6
+Pipeline: API (workflow-api): 2.38
+Pipeline: Basic Steps (workflow-basic-steps): 2.19
+Pipeline: Groovy (workflow-cps): 2.78
+Pipeline: Shared Groovy Libraries (workflow-cps-global-lib): 2.15
+Pipeline: Nodes and Processes (workflow-durable-task-step): 2.35
+Pipeline: Job (workflow-job): 2.36
+Pipeline: Multibranch (workflow-multibranch): 2.21
+Pipeline Remote Loader Plugin (workflow-remote-loader): 1.5
+Pipeline: SCM Step (workflow-scm-step): 2.9
+Pipeline: Step API (workflow-step-api): 2.22
+Pipeline: Supporting APIs (workflow-support): 3.3
+Result: [Plugin:ace-editor, Plugin:ant, Plugin:antisamy-markup-formatter, Plugin:apache-httpcomponents-client-4-api, Plugin:authentication-tokens, Plugin:blueocean, Plugin:blueocean-autofavorite, Plugin:blueocean-bitbucket-pipeline, Plugin:blueocean-commons, Plugin:blueocean-config, Plugin:blueocean-core-js, Plugin:blueocean-dashboard, Plugin:blueocean-display-url, Plugin:blueocean-events, Plugin:blueocean-git-pipeline, Plugin:blueocean-github-pipeline, Plugin:blueocean-i18n, Plugin:blueocean-jira, Plugin:blueocean-jwt, Plugin:blueocean-personalization, Plugin:blueocean-pipeline-api-impl, Plugin:blueocean-pipeline-editor, Plugin:blueocean-pipeline-scm-api, Plugin:blueocean-rest, Plugin:blueocean-rest-impl, Plugin:blueocean-web, Plugin:bouncycastle-api, Plugin:branch-api, Plugin:cloudbees-bitbucket-branch-source, Plugin:cloudbees-folder, Plugin:command-launcher, Plugin:conditional-buildstep, Plugin:config-file-provider, Plugin:credentials, Plugin:credentials-binding, Plugin:display-url-api, Plugin:docker-commons, Plugin:docker-workflow, Plugin:durable-task, Plugin:external-monitor-job, Plugin:favorite, Plugin:git, Plugin:git-client, Plugin:git-server, Plugin:github, Plugin:github-api, Plugin:github-branch-source, Plugin:github-organization-folder, Plugin:gitlab-api, Plugin:gitlab-plugin, Plugin:golang, Plugin:google-kubernetes-engine, Plugin:google-oauth-plugin, Plugin:handlebars, Plugin:handy-uri-templates-2-api, Plugin:htmlpublisher, Plugin:jackson2-api, Plugin:javadoc, Plugin:jdk-tool, Plugin:jenkins-design-language, Plugin:jira, Plugin:job-dsl, Plugin:jquery-detached, Plugin:jsch, Plugin:junit, Plugin:kubernetes, Plugin:kubernetes-client-api, Plugin:kubernetes-credentials, Plugin:ldap, Plugin:lockable-resources, Plugin:mailer, Plugin:mapdb-api, Plugin:matrix-auth, Plugin:matrix-project, Plugin:mercurial, Plugin:metrics, Plugin:momentjs, Plugin:oauth-credentials, Plugin:openshift-client, Plugin:openshift-login, Plugin:openshift-pipeline, Plugin:openshift-sync, Plugin:pam-auth, Plugin:parameterized-trigger, Plugin:pipeline-build-step, Plugin:pipeline-github-lib, Plugin:pipeline-graph-analysis, Plugin:pipeline-input-step, Plugin:pipeline-milestone-step, Plugin:pipeline-model-api, Plugin:pipeline-model-declarative-agent, Plugin:pipeline-model-definition, Plugin:pipeline-model-extensions, Plugin:pipeline-rest-api, Plugin:pipeline-stage-step, Plugin:pipeline-stage-tags-metadata, Plugin:pipeline-stage-view, Plugin:pipeline-utility-steps, Plugin:plain-credentials, Plugin:preSCMbuildstep, Plugin:prometheus, Plugin:pubsub-light, Plugin:ruby-runtime, Plugin:run-condition, Plugin:scm-api, Plugin:script-security, Plugin:sse-gateway, Plugin:ssh-credentials, Plugin:structs, Plugin:subversion, Plugin:token-macro, Plugin:variant, Plugin:windows-slaves, Plugin:workflow-aggregator, Plugin:workflow-api, Plugin:workflow-basic-steps, Plugin:workflow-cps, Plugin:workflow-cps-global-lib, Plugin:workflow-durable-task-step, Plugin:workflow-job, Plugin:workflow-multibranch, Plugin:workflow-remote-loader, Plugin:workflow-scm-step, Plugin:workflow-step-api, Plugin:workflow-support]
